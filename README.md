@@ -52,3 +52,13 @@ yarn android
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+
+## Sharing Logic / Philosophy
+
+The monorepo aims at not being multi-package single repo solution and instead is a very simple way of letting a react native app pick up already written business logic
+
+This is achieved by allowing `metro` (the react native bundler) to read directories above it's root level. This can be extended to even node_modules being on top level but brings it's own problems and so we have a separate `package.json` for it.
+
+Currently the metro config only reads the `lib` folder that you see at the root of the entire repo. To be able to add more such folders, please modify the `metro.config.js`.
+
+**Recommended** : It's easier to just create a `shared` folder and put all shared logic in there to not have to deal with having to modify `metro.config.js` again and again.
