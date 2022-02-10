@@ -1,5 +1,31 @@
 This is a [Next.js](https://nextjs.org/) project with [React Native](https://reactnative.dev/). Repo based on [tyhopp solution](https://tyhopp.com/notes/monorepos-next-js-react-native)
-## Getting Started
+
+
+## Usage
+
+You can create a clone of this using `degit` or `gitscaff` 
+
+```sh
+npx degit PrimeNexes/nextjs-reactnative-monorepo example
+#or if you have (gitscaff)(https://github.com/barelyhuman/gitscaff) 
+gitscaff github:PrimeNexes/nextjs-reactnative-monorepo example
+```
+
+## Setup 
+
+Both stacks Next and React Native are 2 folders with their own package.json, so both need to be setup like anyother node project
+
+```sh
+npm i
+# or
+yarn install 
+## move to the `mobile` folder
+cd mobile 
+npm i
+# or
+yarn install 
+```
+
 
 Run the Next.js development server:
 
@@ -9,18 +35,18 @@ npm run dev
 yarn dev
 ```
 
-Run the React native:
+Run the react native app (`cd mobile`):
 
 ```bash
 #For iOS
-npm run run-ios
+npm run ios
 # or
-yarn run-ios
+yarn ios
 
 #For Android
-npm run run-android
+npm run android
 # or
-yarn run-android
+yarn android
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
