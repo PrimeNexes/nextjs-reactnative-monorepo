@@ -1,7 +1,7 @@
 {
     "compilerOptions": {
       "paths": {
-        "@olr/lib/*": ["../lib/*"],
+        "lib/*": ["../lib/*"],
       }
     }
   }

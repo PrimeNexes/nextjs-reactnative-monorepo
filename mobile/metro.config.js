@@ -9,7 +9,7 @@ const customConfig = {
   resolver: {
     extraNodeModules: new Proxy(
       {
-        '@olr/lib': path.resolve(__dirname, '../lib'),
+        'lib': path.resolve(__dirname, '../lib'),
       },
       {
         get: (defaultExtraModules, importedModule) => {

@@ -6,7 +6,7 @@
  * @flow strict-local
  */
 
-import Example from "@olr/lib/util/example";
+import Example from "lib/util/example";
 import React from 'react';
 import {
   SafeAreaView,
