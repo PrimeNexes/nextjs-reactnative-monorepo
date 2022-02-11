@@ -3,13 +3,14 @@
   "private": true,
   "scripts": {
     "run-android": "cd mobile && yarn run android",
-    "run-ios":"cd mobile && yarn run ios",
-    "install-mobile":"cd mobile && yarn install",
-    "pod-install":"cd mobile/ios && npx pod install",
+    "run-ios": "cd mobile && yarn run ios",
+    "install-mobile": "cd mobile && yarn install",
+    "pod-install": "npx pod-install mobile",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prepare": "cd mobile && yarn install"
   },
   "dependencies": {
     "next": "12.0.10",
